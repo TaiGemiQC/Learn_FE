@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table And Form</title>
+   
+</head>
+<body>
+<!-- <table></table> : khai báo một bảng
+//<tr></tr>: Khai báo một dòng
+//<th></th> : Khai báo một ô tiêu đề
+//<td></td>: Khai báo một ô dữ liệu
+// các thuộc tính trong thẻ <td></td>:
+ - align canh lề
+ - valign canh lề nội dung của ô theo chiều dọc
+ - colspan: Xác định số lượng ô(theo chiều ngang) mà mbajn muốn gộp chung lại với nhau
+ - rowspan: Xác định số lượng ô(theo chiều dọc) mà bạn muốn gộp chung lại với nhau
+ - width: xác định chiều rộng của ô
+ - height: xác định chiều cao của ô
+ - bgcolo: xác định màu nền của ô
+ - nowrap: xác đinh việc nội dung của ô sẽ được hiển thị trên cùng một dòng
+ * thuộc tính align:
+ left: Nội dung của ô sẽ được canh nằm phía bên trái
+ right: canh bên phải
+ center: canh giữa
+ justify: canh đều hai bên trái phải  
+ <Caption></caption> : canh giữa bảng giống thêm thuộc tính colspan gộp số lượng ô
+ ví: <td style="text-alight:right"1991</td> : số 1991 sẽ nằm bên phải
+    ví dụ: 
+
+    <table border="1">
+        <tr>
+            <caption>STUDENT MARK</caption>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>Physics</th>
+            <th>General Knowledge</th>
+        </tr>
+        <tr>
+            <ol type="demical"
+            <td>David</td>
+            <td style="text-align: center;">85</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>General Knowledge</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>General Knowledge</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>General Knowledge</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>General Knowledge</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>General Knowledge</td>
+        </tr>
+    </table> 
+
+    ngày 8/2 : học form và các thẻ liên quan
+    input type: 
+    <input type="button">
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+        <input type="password">
+        <input type="radio">
+        <input type="range">
+        <input type="reset">
+        <input type="search">
+        <input type="submit">
+        <input type="tel">
+        <input type="text">
+        <input type="time">
+        <input type="url">
+        <input type="week">
+
+      Bài tập tạo form cho thú nuôi:
+      General information:
+        - Name
+        - Date of Birth
+        - Weight
+        - Owner Email 
+    Detail Information:
+        - Fur Color 
+        - Favorite things 
+        - Species 
+    Other information 
+        - Pet Photo
+        - Note 
+        
+    
+    -->
+   <!------ <h1>Pet Registry - Form</h1> 
+<form action="#">
+    <fieldset>
+        <legend>General information</legend>
+        Name: <input type="text" name="Petname"><br>
+        Date of Birth: <input type="date" name="PetDateOfBirth"><br>
+        Weight: <input type="number" name="PetWeight" min="0"><br>
+        Owner Email: <input type="email" name="PetOwnerEmail"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Detail information</legend>
+        Fur Color: 
+         <input type="radio" name="PetFurColor" value="White">White
+         <input type="radio" name="PetFurColor" value="Black">Black
+         <input type="radio" name="PetFurColor" value="Yeallow">Yellow
+         <input type="radio" name="PetFurColor" value="Red">Red
+
+         <br>
+         Favorite things:
+         <input type="checkbox" name="PetFavoriteThings" value="milk">Milk
+         <input type="checkbox" name="PetFavoriteThings" value="playing">Playing
+         <input type="checkbox" name="PetFavoriteThings" value="walking">Walking  dạng input check box cho phép chọn nhiều lựa chọn 
+         <br>
+         Species: <select name="PetSpecies"> <!--- thuộc tính cho lựa chọn từ trên xuống sử dụng trường hợp này khi có quá nhiều lựa chọn 
+                    <option value="abyssiniancat">Abyssinian Cat</option>
+                    <option value="American Bobtail Cat Breed">American Bobtail Cat Breed</option>
+                    <option value="American Curl Cat Breed">American Curl Cat Breed</option>
+                    <option value="Balinese-Javanese Cat Breed">Balinese-Javanese Cat Breed</option>
+                    
+         </select>
+    </fieldset>
+    <fieldset>
+        <legend>Other information</legend>
+        Pet Photo: <input type="file" name="PetPhoto"><br>
+        Note: <textarea name="PetNode" cols="30" rows="10"></textarea>
+    </fieldset>
+
+    <table border="1">
+        <caption><b>Registered Pets</b></caption>
+        <tr>
+            <th>No.</th>
+            <th>Pet Name</th>
+            <th>Registration Date</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Lucky</td>
+            <td>12/11/2022</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Smile</td>
+            <td>12/11/2022</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Kitty</td>
+            <td>12/11/2022</td>
+        </tr>
+    </table>
+
+</form>
+-->
+</body>
+</html>
